@@ -1,11 +1,12 @@
 import React from 'react'
+import Video from './Video';
 
 const TopText = () => {
   return (
-    <div className='font-[font1] text-[8vw] uppercase leading-[15vh] text-white'>
+    <div className='font-[font1] text-[120px] uppercase leading-[18vh] text-white text-center mt-8'>
         <div>L'étincelle</div>
-        <div>qui<sapn></sapn>génère</div>
-        <div>la<sapn></sapn>créativité</div>
+        <div>qui<div className="w-[185px] h-[90px] rounded-full overflow-hidden inline-block"><Video /></div>génère</div>
+        <div>la<span></span>créativité</div>
     </div>
   )
 }
