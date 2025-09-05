@@ -44,6 +44,12 @@ const Agence = () => {
         start: "top 25%",
         end: "top -80%",
         pin: true,
+        pinSpacing: true,
+        pinReparent: true,
+        pinType: "transform",
+        scrub: 1,
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
         onUpdate: (elem)=> {
           let imgIdx = 0 ;
           if(elem.progress < 1) {
@@ -58,7 +64,7 @@ const Agence = () => {
   })
   return (
     <>
-      <div className='section-1'>
+      <div className='section-1 relative py-1'>
         <div ref={imgDivRef} className='w-[150px] h-[200px] absolute top-[30vh] left-[30vw] rounded-2xl overflow-hidden'>
           <img ref={imgRef} src='https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg' alt='team-member' className='w-full h-full object-cover' />
         </div>
